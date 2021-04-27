@@ -55,10 +55,32 @@
             </div>
         </section>
 
-        <section id="filterPublication" class="filter filter-publication">
-            <div class="container-fluid container-xxl">
-                <h5>Filtrera på publikationstyp</h5>
+        <section id="filterCategory" class="filter filter-category">
+            <div class="container">
+                <h5>Välj kategori</h5>
                 <ul class="filter-list category-list">
+                    <li><button type="button" class="btn btn-filter active" data-tag="all">Alla</button></li>
+                    <li><button type="button" class="btn btn-filter" data-tag="diplomati">Diplomati</button></li>
+                    <li><button type="button" class="btn btn-filter" data-tag="handel">Handel</button></li>
+                    <li><button type="button" class="btn btn-filter" data-tag="sakerhet">Säkerhet</button></li>
+                    <li><button type="button" class="btn btn-filter" data-tag="teknik">Teknik</button></li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="filterPublication" class="filter filter-publication">
+            <div class="filter__spoiler">
+                <div class="container">
+                    <button class="filter__spoiler-btn filter__spoiler-btn_open" id="filterBtn">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19.0616 0H0.938589C0.105855 0 -0.31434 1.01039 0.275699 1.60043L7.49999 8.82582V16.875C7.49999 17.1809 7.64925 17.4676 7.89988 17.643L11.0249 19.8298C11.6414 20.2613 12.5 19.8239 12.5 19.0617V8.82582L19.7245 1.60043C20.3133 1.01156 19.896 0 19.0616 0Z" fill="white"/>
+                        </svg>
+                        <h5>Filtrera på publikationstyp</h5>
+                    </button>
+                </div>
+            </div>
+            <div class="container">
+                <ul class="filter-list category-list category-list_closed" id="categoryList">
                     <li><button type="button" class="btn btn-filter active" data-publication="all">Alla</button></li>
                     <li><button type="button" class="btn btn-filter" data-publication="seminarier">Seminarier</button></li>
                     <li><button type="button" class="btn btn-filter" data-publication="webinarier">Webinarier</button></li>
@@ -74,19 +96,6 @@
             </div>
         </section>
 
-        <section id="filterCategory" class="filter filter-category">
-            <div class="container-fluid container-xxl">
-                <h5>Välj kategori</h5>
-                <ul class="filter-list category-list">
-                    <li><button type="button" class="btn btn-filter active" data-tag="all">Alla</button></li>
-                    <li><button type="button" class="btn btn-filter" data-tag="diplomati">Diplomati</button></li>
-                    <li><button type="button" class="btn btn-filter" data-tag="handel">Handel</button></li>
-                    <li><button type="button" class="btn btn-filter" data-tag="sakerhet">Säkerhet</button></li>
-                    <li><button type="button" class="btn btn-filter" data-tag="teknik">Teknik</button></li>
-                </ul>
-            </div>
-        </section>
-
         <article class="cards-publication">
             <div class="container">
                 <div class="cards-publication__list">
@@ -95,6 +104,11 @@
                             <img src="img/card1.jpg" alt="Card1">
                         </div>
                         <div class="cards-publication__content">
+                            <ul class="cards-publication__tags-line">
+                                <li><button class="btn" type="button" data-publication="artiklar">Artikel</button></li>
+                                <li><button class="btn" type="button" data-publication="filmer">Film</button></li>
+                            </ul>
+                            
                             <ul class="cards-publication__info-line">
                                 <li> 3 mars 2021 </li>
                                 <li>10.00-11.00</li>
@@ -104,11 +118,6 @@
                             <h6>Succé för digital totalförsvarsutbildning</h6>
 
                             <p>Hittills i år har cirka 1 400 elever i årskurs 2 på gymnasiet i Halland genomfört den nya digitala totalförsvarsutbildningen. Av dem som genomfört utbildningen uppger 95 procent att de har... <a class="cards-publication__more" href="#">Läs&nbsp;mer.</a></p>
-
-                            <ul class="cards-publication__tags-line">
-                                <li><button class="btn" type="button" data-publication="artiklar">Artikel</button></li>
-                                <li><button class="btn" type="button" data-publication="filmer">Film</button></li>
-                            </ul>
                         </div>
                     </div>
 
@@ -117,6 +126,10 @@
                             <img src="img/card2.jpg" alt="Card2">
                         </div>
                         <div class="cards-publication__content">
+                            <ul class="cards-publication__tags-line">
+                                <li><button class="btn" type="button" data-publication="artiklar">Artikel</button></li>
+                            </ul>
+
                             <ul class="cards-publication__info-line">
                                 <li> 4 februari 2021 </li>
                                 <li>Försvarsmakten</li>
@@ -125,10 +138,6 @@
                             <h6>Försvarsmaktens hållbarhetsarbete uppmärksammas</h6>
 
                             <p>Tidningen Aktuell Hållbarhet har återigen med Försvarsmaktens hållbarhetschef Naznoush Habashian på listan över Sveriges mäktigaste makthavare inom området. När årets rankning presenteras har... <a class="cards-publication__more" href="#">Läs&nbsp;mer.</a></p>
-
-                            <ul class="cards-publication__tags-line">
-                                <li><button class="btn" type="button" data-publication="artiklar">Artikel</button></li>
-                            </ul>
                         </div>
                     </div>
 
@@ -137,6 +146,10 @@
                             <img src="img/card3.jpg" alt="Card3">
                         </div>
                         <div class="cards-publication__content">
+                            <ul class="cards-publication__tags-line">
+                                <li><button class="btn" type="button" data-publication="bloggar">Blogg</button></li>
+                            </ul>
+                            
                             <ul class="cards-publication__info-line">
                                 <li> 30 november 2020 </li>
                                 <li>10.00-11.00</li>
@@ -146,10 +159,6 @@
                             <h6>CBRN-utbildning för värnpliktiga</h6>
 
                             <p>Vecka 47 gav plutonen stöd till 51. Grundutbildningskompaniet med att utbilda värnpliktiga rekryter inom både brandbekämpning samt CBRN. Samtliga värnpliktiga rekryter oavsett... <a class="cards-publication__more" href="#">Läs&nbsp;mer.</a></p>
-
-                            <ul class="cards-publication__tags-line">
-                                <li><button class="btn" type="button" data-publication="bloggar">Blogg</button></li>
-                            </ul>
                         </div>
                     </div>
 
@@ -159,6 +168,10 @@
                             <img src="img/card4.jpg" alt="Card4">
                         </div>
                         <div class="cards-publication__content">
+                            <ul class="cards-publication__tags-line">
+                                <li><button class="btn" type="button" data-publication="webinarier">Webinarie</button></li>
+                            </ul>
+
                             <ul class="cards-publication__info-line">
                                 <li> 29 november 2020 </li>
                                 <li>10.00-11.00</li>
@@ -168,10 +181,6 @@
                             <h6>Försvarsindustrins roll i säkerhetspolitiken</h6>
 
                             <p>Tidningen Aktuell Hållbarkhet har återigen med Försvarsmaktens hållbarhetschef Nanzoush Habashian på listan över Sveriges mäktigaste inom området. <a class="cards-publication__more" href="#">Läs&nbsp;mer.</a></p>
-
-                            <ul class="cards-publication__tags-line">
-                                <li><button class="btn" type="button" data-publication="webinarier">Webinarie</button></li>
-                            </ul>
                         </div>
                     </div>
 
@@ -180,6 +189,10 @@
                             <img src="img/card5.jpg" alt="Card5">
                         </div>
                         <div class="cards-publication__content">
+                            <ul class="cards-publication__tags-line">
+                                <li><button class="btn" type="button" data-publication="artiklar">Artikel</button></li>
+                            </ul>
+
                             <ul class="cards-publication__info-line">
                                 <li> 10 november 2020 </li>
                                 <li>Försvarsmakten</li>
@@ -189,9 +202,6 @@
 
                             <p>Nu har försvarssektorn enats om en gemensam inriktning för tre gemensamma fokusområden; energi och klimat, kemi och förorenade områden. Syftet med samverkan kring en gemensam inriktning är att... <a class="cards-publication__more" href="#">Läs&nbsp;mer.</a></p>
 
-                            <ul class="cards-publication__tags-line">
-                                <li><button class="btn" type="button" data-publication="artiklar">Artikel</button></li>
-                            </ul>
                         </div>
                     </div>
 
@@ -201,6 +211,10 @@
                             <img src="img/card6.jpg" alt="Card6">
                         </div>
                         <div class="cards-publication__content">
+                            <ul class="cards-publication__tags-line">
+                                <li><button class="btn" type="button" data-publication="webinarier">Webinarie</button></li>
+                            </ul>
+
                             <ul class="cards-publication__info-line">
                                 <li> 9 november 2020 </li>
                                 <li>09.00-17.00</li>
@@ -210,10 +224,6 @@
                             <h6>Folk och Försvars Rikskonferens</h6>
 
                             <p>Folk och Försvars Rikskonferens är ett tillfälle att främja diskussion om försvars- och säkerhets- politik med högnivåtalare och framstående experter som deltagare. <a class="cards-publication__more" href="#">Läs&nbsp;mer.</a></p>
-
-                            <ul class="cards-publication__tags-line">
-                                <li><button class="btn" type="button" data-publication="webinarier">Webinarie</button></li>
-                            </ul>
                         </div>
                     </div>
 
@@ -223,6 +233,10 @@
                             <img src="img/card7.jpg" alt="Card7">
                         </div>
                         <div class="cards-publication__content">
+                            <ul class="cards-publication__tags-line">
+                                <li><button class="btn" type="button" data-publication="Uppsatser">Utställning</button></li>
+                            </ul>
+
                             <ul class="cards-publication__info-line">
                                 <li> 9 november 2020 </li>
                                 <li>10.00-16.00</li>
@@ -233,9 +247,6 @@
 
                             <p>Möt kvinnorna i svensk underrättelsetjänst under andra världskriget. I hemlighet tjänstgör de som informanter, kurirer eller infiltratörer. <a class="cards-publication__more" href="#">Läs&nbsp;mer.</a></p>
 
-                            <ul class="cards-publication__tags-line">
-                                <li><button class="btn" type="button" data-publication="Uppsatser">Utställning</button></li>
-                            </ul>
                         </div>
                     </div>
                 </div>
@@ -247,7 +258,7 @@
                         <button type="button" class="pagination-prev"><span></span></button>
 
                         <div class="pagination__pages">
-                            <button class="pagination__value">1</button>
+                            <button class="pagination__value pagination__value_active">1</button>
                             <button class="pagination__value pagination__value_xs-hide">2</button>
                             <button class="pagination__value pagination__value_xs-hide">3</button>
                             <button class="pagination__value pagination__value_mb-hide">4</button>

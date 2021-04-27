@@ -29,15 +29,6 @@
         padding: 35px 65px;
     }
 
-    .cards-publication__info-line li {
-        font-size: 19px;
-    }
-
-    .cards-publication__tags-line button {
-        height: 57px;
-        font-size: 24px;
-    }
-
     .cards-publication__tags-line {
         flex-wrap: wrap;
     }
@@ -55,6 +46,10 @@
         width: 36%;
     }
 
+    .main-quote {
+        padding-top: 160px;
+        padding-bottom: 90px;
+    }
 }
 
 @media screen and (max-width:1200px) {
@@ -66,25 +61,30 @@
         }
     }
 
-    .security-list {
+    .main-quote {
+        h3 {
+            font-size: 45px;
+            max-width: 620px;
+        }
 
-        .security-list__content {
-            p {
-                font-size: 22px;
-            }
-        }     
+        cite {
+            font-size: 20px;
+        }
+    }
+
+    .security-list {  
         
         .btn {
             width: 100%;
         }
+
+        li:not(:last-child) {
+            margin-right: 2em;
+        }
     }
 
-    .half-section {
-
-        h3 {
-            line-height: 40px;
-            margin-bottom: 20px;
-        }
+    .independence h4 {
+        max-width: 355px;
     }
 
     footer {
@@ -158,9 +158,6 @@
             }
         }
 
-        .security-list__content p {
-            font-size: 24px;
-        }
     }
 
     .header_main .section__content {
@@ -273,6 +270,10 @@
         background-color: transparent;
     }
 
+    .history {
+        margin: 120px auto;
+    }
+
     .cards-publication__item h6 {
         font-size: 22px;
     }
@@ -284,6 +285,10 @@
     .cards-publication__tags-line button {
         height: 46px;
         font-size: 21px;
+    }
+
+    .independence h4 {
+        max-width: unset;
     }
 
 }
@@ -300,15 +305,19 @@
     }
 
     h2 {
-        font-size: 50px;
+        font-size: 45px;
     }
 
     h3 {
-        font-size: 40px;
+        font-size: 36px;
     }
 
     h4 {
-        font-size: 35px;
+        font-size: 30px;
+    }
+
+    .independence .btn {
+        font-size: 16px;
     }
 
     .main-quote {
@@ -316,15 +325,17 @@
         h3 {
             line-height: 154%;
             margin-bottom: 50px;
+            font-size: 34px;
         }
 
         h3::after {
             margin-top: 40px;
         }
-    }
 
-    .section__content p {
-        font-size: 26px;
+        h3::before, 
+        h3::after {
+            font-size: 69px;
+        }
     }
 
     header {
@@ -358,11 +369,6 @@
 }
 
 @media screen and (max-width:528px) {
-    .section__content p,
-    .independence .section__content p {
-        line-height: 160%;
-        font-size: 23px;
-    }
 
     .half-section .half-section__content p {
         font-size: 20px;
@@ -424,7 +430,7 @@
     }
 
     .cards-publication__item h6 {
-        font-size: 22px;
+        font-size: 20px;
     }
 
     .cards-publication__tags-line button {
@@ -439,15 +445,34 @@
     .half-section .half-section__content {
         padding: 35px 20px;
     }
+
+    .main-quote {
+        h3 {
+            font-size: 26px;
+        }
+
+        h3::before, 
+        h3::after {
+            font-size: 45px;
+        }
+
+        cite {
+            font-size: 18px;
+        }
+    }
+
+    .filter .filter__spoiler h5 {
+        font-size: 28px;
+    }
 }
 
 @media screen and (max-width:424px) {
     h1 {
-        font-size: 40px;
+        font-size: 34px;
     }
 
     h2 {
-        font-size: 40px;
+        font-size: 32px;
     }
 
     footer {
@@ -484,9 +509,16 @@
         line-height: 140%;
     }
 
-    .category-list li {
-        flex-basis: 100%;
-        max-width: none;
+    .category-list {
+        li {
+            flex-grow: 1;
+            flex-basis: 100%;
+            max-width: none;
+
+            .btn {
+                width: 100%;
+            }
+        }
     }
 
     .date-list li {
@@ -496,5 +528,13 @@
 
     .pagination__value_xs-hide {
         display: none;
+    }
+
+    .filter .filter__spoiler h5 {
+        font-size: 22px;
+    }
+
+    .filter .filter__spoiler svg {
+        margin-right: 10px;
     }
 }

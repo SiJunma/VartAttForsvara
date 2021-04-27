@@ -17,13 +17,6 @@
   .half-section .half-section__content {
     padding: 35px 65px; }
 
-  .cards-publication__info-line li {
-    font-size: 19px; }
-
-  .cards-publication__tags-line button {
-    height: 57px;
-    font-size: 24px; }
-
   .cards-publication__tags-line {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
@@ -36,20 +29,29 @@
 
   .cards-publication__media-wrapper {
     margin-right: 30px;
-    width: 36%; } }
+    width: 36%; }
+
+  .main-quote {
+    padding-top: 160px;
+    padding-bottom: 90px; } }
 @media screen and (max-width: 1200px) {
   .header_main .section__content {
     max-width: 870px;
     margin: 0 auto; }
 
-  .security-list .security-list__content p {
-    font-size: 22px; }
+  .main-quote h3 {
+    font-size: 45px;
+    max-width: 620px; }
+  .main-quote cite {
+    font-size: 20px; }
+
   .security-list .btn {
     width: 100%; }
+  .security-list li:not(:last-child) {
+    margin-right: 2em; }
 
-  .half-section h3 {
-    line-height: 40px;
-    margin-bottom: 20px; }
+  .independence h4 {
+    max-width: 355px; }
 
   footer {
     font-size: 17px; }
@@ -105,8 +107,6 @@
       .security-list li:not(:last-child) {
         margin-right: 0;
         margin-bottom: 120px; }
-    .security-list .security-list__content p {
-      font-size: 24px; }
 
   .header_main .section__content {
     max-width: 640px; }
@@ -199,6 +199,9 @@
   .half-section .half-section__content_gray {
     background-color: transparent; }
 
+  .history {
+    margin: 120px auto; }
+
   .cards-publication__item h6 {
     font-size: 22px; }
 
@@ -207,7 +210,10 @@
 
   .cards-publication__tags-line button {
     height: 46px;
-    font-size: 21px; } }
+    font-size: 21px; }
+
+  .independence h4 {
+    max-width: unset; } }
 @media screen and (max-height: 719px) {
   header {
     height: 575px; } }
@@ -216,22 +222,26 @@
     font-size: 50px; }
 
   h2 {
-    font-size: 50px; }
+    font-size: 45px; }
 
   h3 {
-    font-size: 40px; }
+    font-size: 36px; }
 
   h4 {
-    font-size: 35px; }
+    font-size: 30px; }
+
+  .independence .btn {
+    font-size: 16px; }
 
   .main-quote h3 {
     line-height: 154%;
-    margin-bottom: 50px; }
+    margin-bottom: 50px;
+    font-size: 34px; }
   .main-quote h3::after {
     margin-top: 40px; }
-
-  .section__content p {
-    font-size: 26px; }
+  .main-quote h3::before,
+  .main-quote h3::after {
+    font-size: 69px; }
 
   header {
     height: 570px; }
@@ -257,11 +267,6 @@
     max-width: 516px;
     width: 100%; } }
 @media screen and (max-width: 528px) {
-  .section__content p,
-  .independence .section__content p {
-    line-height: 160%;
-    font-size: 23px; }
-
   .half-section .half-section__content p {
     font-size: 20px; }
 
@@ -307,7 +312,7 @@
     font-size: 20px; }
 
   .cards-publication__item h6 {
-    font-size: 22px; }
+    font-size: 20px; }
 
   .cards-publication__tags-line button {
     background: #C4C4C4;
@@ -318,13 +323,24 @@
     width: auto; }
 
   .half-section .half-section__content {
-    padding: 35px 20px; } }
+    padding: 35px 20px; }
+
+  .main-quote h3 {
+    font-size: 26px; }
+  .main-quote h3::before,
+  .main-quote h3::after {
+    font-size: 45px; }
+  .main-quote cite {
+    font-size: 18px; }
+
+  .filter .filter__spoiler h5 {
+    font-size: 28px; } }
 @media screen and (max-width: 424px) {
   h1 {
-    font-size: 40px; }
+    font-size: 34px; }
 
   h2 {
-    font-size: 40px; }
+    font-size: 32px; }
 
   footer .footer__wrapper {
     -webkit-box-orient: vertical;
@@ -352,9 +368,14 @@
     line-height: 140%; }
 
   .category-list li {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
     max-width: none; }
+    .category-list li .btn {
+      width: 100%; }
 
   .date-list li {
     -webkit-box-flex: 1;
@@ -363,6 +384,12 @@
     text-align: center; }
 
   .pagination__value_xs-hide {
-    display: none; } }
+    display: none; }
+
+  .filter .filter__spoiler h5 {
+    font-size: 22px; }
+
+  .filter .filter__spoiler svg {
+    margin-right: 10px; } }
 
 /*# sourceMappingURL=media.css.map */
