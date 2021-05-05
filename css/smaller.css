@@ -41,10 +41,14 @@ header {
   line-height: 170%;
   max-width: 790px; }
 
-.security-list .security-list__card img {
-  width: 82%;
-  margin: 0 auto;
-  height: 370px; }
+.security-list .security-list__card {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start; }
+  .security-list .security-list__card img {
+    width: 82%;
+    margin: 0 auto;
+    height: 370px; }
 .security-list .h-line::after {
   max-width: 120px;
   margin-top: 20px;
@@ -52,12 +56,13 @@ header {
 .security-list .security-list__content {
   max-width: 290px;
   margin: 0 auto;
-  margin-bottom: auto; }
+  margin-bottom: auto;
+  padding-bottom: 20px; }
   .security-list .security-list__content p {
     font-size: 18px;
     margin-bottom: 0px; }
 .security-list .btn {
-  margin-top: 30px;
+  margin-top: auto;
   font-weight: 500; }
 .security-list li:not(:last-child) {
   margin-right: 0em; }
