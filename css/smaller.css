@@ -36,6 +36,9 @@ header {
 @media screen and (max-height: 719px) {
   header {
     height: 575px; } }
+.btn {
+  font-size: 18px; }
+
 .section__content p {
   font-size: 18px;
   line-height: 170%;
