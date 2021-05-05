@@ -222,6 +222,8 @@ header {
           width: 14px;
           height: 9px;
           margin-left: 10px; }
+        .nav-main .navbar-nav .dropdown-nav .dropdown-link:hover {
+          border-bottom: 2px solid transparent; }
         .nav-main .navbar-nav .dropdown-nav .dropdown-link:hover + .dropdown-list {
           -webkit-transform: translateY(0px);
                   transform: translateY(0px);
@@ -237,7 +239,10 @@ header {
   .nav-main .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28 255, 255, 255, 0.8%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); }
   .nav-main .dropdown-list {
-    background-color: rgba(37, 63, 131, 0.67); }
+    background-color: #fff;
+    color: #5d5d5d;
+    -webkit-box-shadow: 2px 5px 10px #00000021;
+            box-shadow: 2px 5px 10px #00000021; }
 
 .security {
   padding-top: 110px;

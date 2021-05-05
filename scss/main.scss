@@ -264,6 +264,10 @@ header {
                     margin-left: 10px;
                 }
 
+                &:hover {
+                    border-bottom: 2px solid transparent;
+                }
+
                 &:hover + .dropdown-list {
                     transform: translateY(0px);
                     opacity: 1;
@@ -291,7 +295,9 @@ header {
     }
 
     .dropdown-list {
-        background-color: rgba(37, 63, 131, 0.67);
+        background-color: #fff;
+        color: #5d5d5d;
+        box-shadow: 2px 5px 10px #00000021;
     }
 }
 

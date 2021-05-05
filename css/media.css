@@ -166,6 +166,8 @@
         height: 0;
         -webkit-transition: height 0.4s ease, position 0.4s ease;
         transition: height 0.4s ease, position 0.4s ease; }
+        .nav-main .navbar-nav .dropdown-nav .dropdown-list a {
+          height: auto; }
         .nav-main .navbar-nav .dropdown-nav .dropdown-list:hover {
           height: auto;
           position: static; }

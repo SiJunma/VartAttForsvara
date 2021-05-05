@@ -221,6 +221,10 @@
                     height: 0;
                     transition: height 0.4s ease, position 0.4s ease;
 
+                    a {
+                        height: auto;
+                    }
+
                     &:hover {
                         height: auto;
                         position: static;
