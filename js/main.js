@@ -1,3 +1,5 @@
+
+//Nackground on scroll
 const myNav = document.getElementById('navMain');
 
 window.onscroll = function () { 
@@ -10,6 +12,8 @@ window.onscroll = function () {
     }
 };
 
+
+// Open filter
 const filterToggle = document.getElementById('filterBtn');
 const categoryList = document.getElementById('categoryList');
 
@@ -20,4 +24,14 @@ if (filterToggle) {
         categoryList.classList.toggle('category-list_closed');
     })
 }
+
+
+//PreventDefault for dropdown links
+const dropdownLinks = myNav.querySelectorAll('.dropdown-link');
+
+dropdownLinks.forEach(link => {
+    link.addEventListener('click', (evt) => {
+        evt.preventDefault();
+    })
+});
 
