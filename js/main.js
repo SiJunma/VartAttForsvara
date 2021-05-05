@@ -13,8 +13,11 @@ window.onscroll = function () {
 const filterToggle = document.getElementById('filterBtn');
 const categoryList = document.getElementById('categoryList');
 
-filterToggle.addEventListener('click', (evt) => {
-    evt.preventDefault();
-    filterToggle.classList.toggle('filter__spoiler-btn_open');
-    categoryList.classList.toggle('category-list_closed');
-})
+if (filterToggle) {
+    filterToggle.addEventListener('click', (evt) => {
+        evt.preventDefault();
+        filterToggle.classList.toggle('filter__spoiler-btn_open');
+        categoryList.classList.toggle('category-list_closed');
+    })
+}
+
