@@ -8,8 +8,8 @@
     }
 }
 
-h1, h2 {
-    font-size: 40px;
+h1 {
+    font-size: 46px;
 }
 
 h2 {
@@ -305,7 +305,11 @@ footer {
     }
 
     h1 {
-        font-size: 33px;
+        font-size: 38px;
+    }
+
+    header h1 {
+        max-width: 510px;
     }
 
     .cards-publication__item {
@@ -322,6 +326,15 @@ footer {
 @media screen and (max-width: 424px) {
     .independence .btn {
         height: 52px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    header h1 {
+        max-width: unset;
+        margin-bottom: 10px;
     }
 
     .security-list .security-list__card img {

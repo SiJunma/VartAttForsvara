@@ -3,8 +3,8 @@
 .nav-main .navbar-brand {
   font-size: 22px; }
 
-h1, h2 {
-  font-size: 40px; }
+h1 {
+  font-size: 46px; }
 
 h2 {
   font-size: 32px; }
@@ -204,7 +204,10 @@ footer {
     padding: 35px 20px; }
 
   h1 {
-    font-size: 33px; }
+    font-size: 38px; }
+
+  header h1 {
+    max-width: 510px; }
 
   .cards-publication__item h6 {
     font-size: 20px; }
@@ -213,6 +216,13 @@ footer {
 @media screen and (max-width: 424px) {
   .independence .btn {
     height: 52px; }
+
+  h1 {
+    font-size: 32px; }
+
+  header h1 {
+    max-width: unset;
+    margin-bottom: 10px; }
 
   .security-list .security-list__card img {
     width: 100%; } }
