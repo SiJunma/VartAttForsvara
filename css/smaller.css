@@ -80,7 +80,7 @@ header {
 
 .main-quote {
   padding-bottom: 60px;
-  padding-top: 140px; }
+  padding-top: 20px; }
   .main-quote h3 {
     font-size: 32px;
     max-width: 580px;
@@ -188,11 +188,14 @@ footer {
     margin: 25px 12px 0 12px; }
 
   .cards-publication__item h6 {
-    font-size: 22px; } }
+    font-size: 22px; }
+
+  .cornerstones-list {
+    margin-top: 0px; } }
 @media screen and (max-width: 576px) {
   .main-quote {
     padding-bottom: 60px;
-    padding-top: 90px; }
+    padding-top: 40px; }
 
   .nav-main .navbar-brand {
     font-size: 18px; }
