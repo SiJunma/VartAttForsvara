@@ -33,11 +33,12 @@
 
 @font-face {
     font-family: 'Favorit';
-    src: url('FavoritStd-Book.eot');
-    src: url('FavoritStd-Book.eot?#iefix') format('embedded-opentype'),
-        url('FavoritStd-Book.woff2') format('woff2'),
-        url('FavoritStd-Book.woff') format('woff'),
-        url('FavoritStd-Book.ttf') format('truetype');
+    src: url('../fonts/FavoritStd-Book.eot');
+    src: url('../fonts/FavoritStd-Book.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/FavoritStd-Book.woff2') format('woff2'),
+        url('../fonts/FavoritStd-Book.woff') format('woff'),
+        url('../fonts/FavoritStd-Book.ttf') format('truetype'),
+        url('../fonts/FavoritStd-Book.svg#FavoritStd-Book') format('svg');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
