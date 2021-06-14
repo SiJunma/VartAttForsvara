@@ -64,27 +64,89 @@
 
         <section id="filterDate" class="filter-date">
             <div class="container">
-                <h5 hidden>Välj dates</h5>
-                <ul class="filter-list date-list">
-                    <li><button  type="button" class="btn-filter active" data-year="1500">1500</button></li>
-                    <li><button  type="button" class="btn-filter" data-year="1600">1600</button></li>
-                    <li><button  type="button" class="btn-filter" data-year="1700">1700</button></li>
-                    <li><button  type="button" class="btn-filter" data-year="1800">1800</button></li>
-                    <li><button  type="button" class="btn-filter" data-year="1900">1900</button></li>
-                    <li><button  type="button" class="btn-filter" data-year="2000">2000</button></li>
-                </ul>
+                
             </div>
         </section>
 
-        <section id="filterCategory" class="filter filter-category">
+        <section id="filterPublication" class="filter-publication">
             <div class="container">
-                <h5>Välj kategorier</h5>
-                <ul class="filter-list category-list">
-                    <li><button  type="button" class="btn btn-filter active" data-tag="all">Alla</button></li>
-                    <li><button  type="button" class="btn btn-filter" data-tag="diplomati">Diplomati</button></li>
-                    <li><button  type="button" class="btn btn-filter" data-tag="handel">Handel</button></li>
-                    <li><button  type="button" class="btn btn-filter" data-tag="sakerhet">Säkerhet</button></li>
-                    <li><button  type="button" class="btn btn-filter" data-tag="industri">Industri</button></li>
+                <div class="filter-publication__wrapper">
+                    <div class="filter-publication__item">
+                        <span>Välj kategorier</span>
+                        <div class="dropdown">
+                            <button class="dropbtn">Choose a category</button>
+                            <div class="dropdown-content">
+                                <label class="dropdown-container">Alla
+                                    <input type="checkbox" checked value="Alla">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="dropdown-container">Diplomati
+                                    <input type="checkbox" value="Diplomati">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="dropdown-container">Handel
+                                    <input type="checkbox" value="Handel">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="dropdown-container">Säkerhet
+                                    <input type="checkbox" value="Säkerhet">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="dropdown-container">Industri
+                                    <input type="checkbox" value="Industri">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="filter-publication__item">
+                        <span>Filter by century</span>
+                        <div class="dropdown">
+                            <button class="dropbtn">1500 - 1599 years</button>
+                            <div class="dropdown-content">
+                                <label class="dropdown-container">1500 - 1599
+                                    <input type="radio" name="years" checked>
+                                    <span class="radiomark"></span>
+                                </label>
+                                <label class="dropdown-container">1600 - 1699
+                                    <input type="radio" name="years">
+                                    <span class="radiomark"></span>
+                                </label>
+                                <label class="dropdown-container">1700 - 1799
+                                    <input type="radio" name="years">
+                                    <span class="radiomark"></span>
+                                </label>
+                                <label class="dropdown-container">1800 - 1899
+                                    <input type="radio" name="years">
+                                    <span class="radiomark"></span>
+                                </label>
+                                <label class="dropdown-container">1900 - 1999
+                                    <input type="radio" name="years">
+                                    <span class="radiomark"></span>
+                                </label>
+    
+                                <label class="dropdown-container">2000 >
+                                    <input type="radio" name="years">
+                                    <span class="radiomark"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="filterSelectedTags" class="filter-selectedtags">
+            <div class="container">
+                <ul class="filter-selectedtags__list">
+                    <li>
+                        <button class="filter-selectedtags__btn" type="button" data-name="Industri">Industri</button>
+                    </li>
+
+                    <li>
+                        <button class="filter-selectedtags__btn" type="button" data-name="Handel">Handel</button>
+                    </li>
                 </ul>
             </div>
         </section>
@@ -191,8 +253,8 @@
                     <h6>Kontakt</h6>
                     <p>
                         <span>SOFF: Säkerhets- och försvarsföretagen</span> 
-                        <span>Box 5510115</span> 
-                        <span>85 Stockholm</span> 
+                        <span>Box 5510</span> 
+                        <span>115 85 Stockholm</span>  
                     </p>
                     <p>
                         <span>08-782 08 50</span> 

@@ -62,43 +62,106 @@
             </div>
         </section>
 
-        <section id="filterCategory" class="filter filter-category">
+        <section id="filterPublication" class="filter-publication">
             <div class="container">
-                <h5>Välj kategori</h5>
-                <ul class="filter-list category-list">
-                    <li><button type="button" class="btn btn-filter active" data-tag="all">Alla</button></li>
-                    <li><button type="button" class="btn btn-filter" data-tag="diplomati">Diplomati</button></li>
-                    <li><button type="button" class="btn btn-filter" data-tag="handel">Handel</button></li>
-                    <li><button type="button" class="btn btn-filter" data-tag="sakerhet">Säkerhet</button></li>
-                    <li><button type="button" class="btn btn-filter" data-tag="teknik">Teknik</button></li>
-                </ul>
+                <div class="filter-publication__wrapper">
+                    <div class="filter-publication__item">
+                        <span>Välj kategorier</span>
+                        <div class="dropdown">
+                            <button class="dropbtn">Choose a category</button>
+                            <div class="dropdown-content">
+                                <label class="dropdown-container">Alla
+                                    <input type="checkbox" checked value="Alla">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="dropdown-container">Diplomati
+                                    <input type="checkbox" value="Diplomati">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="dropdown-container">Handel
+                                    <input type="checkbox" value="Handel">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="dropdown-container">Säkerhet
+                                    <input type="checkbox" value="Säkerhet">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="dropdown-container">Industri
+                                    <input type="checkbox" value="Industri">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="filter-publication__item">
+                        <span>Filtrera på publikationstyp</span>
+                        <div class="dropdown">
+                            <button class="dropbtn">Select a publication</button>
+                            <div class="dropdown-content">
+                                <label class="dropdown-container">Alla
+                                    <input type="checkbox" checked value="Alla">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="dropdown-container">Seminarier
+                                    <input type="checkbox" value="Seminarier">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="dropdown-container">Webinarier
+                                    <input type="checkbox" value="Webinarier">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="dropdown-container">Artiklar
+                                    <input type="checkbox" value="Artiklar">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="dropdown-container">Bloggar
+                                    <input type="checkbox" value="Bloggar">
+                                    <span class="checkmark"></span>
+                                </label>
+
+                                <label class="dropdown-container">Rapporter
+                                    <input type="checkbox" value="Rapporter">
+                                    <span class="checkmark"></span>
+                                </label>
+
+                                <label class="dropdown-container">Filmer
+                                    <input type="checkbox" value="Filmer">
+                                    <span class="checkmark"></span>
+                                </label>
+
+                                <label class="dropdown-container">Podcast
+                                    <input type="checkbox" value="Podcast">
+                                    <span class="checkmark"></span>
+                                </label>
+
+                                <label class="dropdown-container">Uppsatser
+                                    <input type="checkbox" value="Uppsatser">
+                                    <span class="checkmark"></span>
+                                </label>
+
+                                <label class="dropdown-container">Statistik
+                                    <input type="checkbox" value="Statistik">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </section>
 
-        <section id="filterPublication" class="filter filter-publication">
-            <div class="filter__spoiler">
-                <div class="container">
-                    <button class="filter__spoiler-btn filter__spoiler-btn_open" id="filterBtn">
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M19.0616 0H0.938589C0.105855 0 -0.31434 1.01039 0.275699 1.60043L7.49999 8.82582V16.875C7.49999 17.1809 7.64925 17.4676 7.89988 17.643L11.0249 19.8298C11.6414 20.2613 12.5 19.8239 12.5 19.0617V8.82582L19.7245 1.60043C20.3133 1.01156 19.896 0 19.0616 0Z" fill="white"/>
-                        </svg>
-                        <h5>Filtrera på publikationstyp</h5>
-                    </button>
-                </div>
-            </div>
+        <section id="filterSelectedTags" class="filter-selectedtags">
             <div class="container">
-                <ul class="filter-list category-list category-list_closed" id="categoryList">
-                    <li><button type="button" class="btn btn-filter active" data-publication="all">Alla</button></li>
-                    <li><button type="button" class="btn btn-filter" data-publication="seminarier">Seminarier</button></li>
-                    <li><button type="button" class="btn btn-filter" data-publication="webinarier">Webinarier</button></li>
-                    <li><button type="button" class="btn btn-filter" data-publication="artiklar">Artiklar</button></li>
-                    <li><button type="button" class="btn btn-filter" data-publication="bloggar">Bloggar</button></li>
+                <ul class="filter-selectedtags__list">
+                    <li>
+                        <button class="filter-selectedtags__btn" type="button" data-name="Industri">Industri</button>
+                    </li>
 
-                    <li><button type="button" class="btn btn-filter" data-publication="rapporter">Rapporter</button></li>
-                    <li><button type="button" class="btn btn-filter" data-publication="filmer">Filmer</button></li>
-                    <li><button type="button" class="btn btn-filter" data-publication="podcast">Podcast</button></li>
-                    <li><button type="button" class="btn btn-filter" data-publication="uppsatser">Uppsatser</button></li>
-                    <li><button type="button" class="btn btn-filter" data-publication="statistik">Statistik</button></li>
+                    <li>
+                        <button class="filter-selectedtags__btn" type="button" data-name="Handel">Handel</button>
+                    </li>
                 </ul>
             </div>
         </section>
@@ -431,8 +494,8 @@
                     <h6>Kontakt</h6>
                     <p>
                         <span>SOFF: Säkerhets- och försvarsföretagen</span> 
-                        <span>Box 5510115</span> 
-                        <span>85 Stockholm</span> 
+                        <span>Box 5510</span> 
+                        <span>115 85 Stockholm</span> 
                     </p>
                     <p>
                         <span>08-782 08 50</span> 
