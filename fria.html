@@ -62,16 +62,16 @@
             </div>
         </section>
 
-        <section id="filterPublication" class="filter-publication">
+        <section id="filterSection" class="filter-publication">
             <div class="container">
                 <div class="filter-publication__wrapper">
-                    <div class="filter-publication__item">
+                    <div class="filter-publication__item" id="filterCategory">
                         <span>Välj kategorier</span>
                         <div class="dropdown">
                             <button class="dropbtn">Choose a category</button>
                             <div class="dropdown-content">
-                                <label class="dropdown-container">Alla
-                                    <input type="checkbox" checked value="Alla">
+                                <label class="dropdown-container">Alla kategorier
+                                    <input type="checkbox" checked value="Alla kategorier">
                                     <span class="checkmark"></span>
                                 </label>
                                 <label class="dropdown-container">Diplomati
@@ -94,13 +94,13 @@
                         </div>
                     </div>
 
-                    <div class="filter-publication__item">
+                    <div class="filter-publication__item" id="filterPublication">
                         <span>Filtrera på publikationstyp</span>
                         <div class="dropdown">
                             <button class="dropbtn">Select a publication</button>
                             <div class="dropdown-content">
-                                <label class="dropdown-container">Alla
-                                    <input type="checkbox" checked value="Alla">
+                                <label class="dropdown-container">Alla publikationstyp
+                                    <input type="checkbox" checked value="Alla publikationstyp">
                                     <span class="checkmark"></span>
                                 </label>
                                 <label class="dropdown-container">Seminarier
@@ -155,13 +155,7 @@
         <section id="filterSelectedTags" class="filter-selectedtags">
             <div class="container">
                 <ul class="filter-selectedtags__list">
-                    <li>
-                        <button class="filter-selectedtags__btn" type="button" data-name="Industri">Industri</button>
-                    </li>
 
-                    <li>
-                        <button class="filter-selectedtags__btn" type="button" data-name="Handel">Handel</button>
-                    </li>
                 </ul>
             </div>
         </section>
@@ -174,10 +168,14 @@
                             <img src="img/card1.jpg" alt="Card1">
                         </div>
                         <div class="cards-publication__content">
+                            <h6>Succé för digital totalförsvarsutbildning</h6>
+
                             <ul class="cards-publication__tags-line">
-                                <li><button class="btn" type="button" data-publication="artiklar">Artikel</button></li>
-                                <li><button class="btn" type="button" data-publication="filmer">Film</button></li>
+                                <li><button class="cards-publication__tag" type="button" data-publication="webinarier">Webinarier</button></li>
+                                <li><button class="cards-publication__tag" type="button" data-publication="filmer">Film</button></li>
                             </ul>
+
+                            <p>Hittills i år har cirka 1 400 elever i årskurs 2 på gymnasiet i Halland genomfört den nya digitala totalförsvarsutbildningen. Av dem som genomfört utbildningen uppger 95 procent att de har... <a class="cards-publication__more" href="#">Läs&nbsp;mer.</a></p>
                             
                             <ul class="cards-publication__info-line">
                                 <li> 3 mars 2021 </li>
@@ -185,9 +183,6 @@
                                 <li>Försvarsmakten</li>
                             </ul>
                             
-                            <h6>Succé för digital totalförsvarsutbildning</h6>
-
-                            <p>Hittills i år har cirka 1 400 elever i årskurs 2 på gymnasiet i Halland genomfört den nya digitala totalförsvarsutbildningen. Av dem som genomfört utbildningen uppger 95 procent att de har... <a class="cards-publication__more" href="#">Läs&nbsp;mer.</a></p>
                         </div>
                     </div>
 
@@ -196,138 +191,138 @@
                             <img src="img/card2.jpg" alt="Card2">
                         </div>
                         <div class="cards-publication__content">
+                            <h6>Försvarsmaktens hållbarhetsarbete uppmärksammas</h6>
+
                             <ul class="cards-publication__tags-line">
-                                <li><button class="btn" type="button" data-publication="artiklar">Artikel</button></li>
+                                <li><button class="cards-publication__tag" type="button" data-publication="blogg">Blogg</button></li>
                             </ul>
+                            
+                            <p>Tidningen Aktuell Hållbarhet har återigen med Försvarsmaktens hållbarhetschef Naznoush Habashian på listan över Sveriges mäktigaste makthavare inom området. När årets rankning presenteras har... <a class="cards-publication__more" href="#">Läs&nbsp;mer.</a></p>
 
                             <ul class="cards-publication__info-line">
                                 <li> 4 februari 2021 </li>
                                 <li>Försvarsmakten</li>
                             </ul>
-                            
-                            <h6>Försvarsmaktens hållbarhetsarbete uppmärksammas</h6>
-
-                            <p>Tidningen Aktuell Hållbarhet har återigen med Försvarsmaktens hållbarhetschef Naznoush Habashian på listan över Sveriges mäktigaste makthavare inom området. När årets rankning presenteras har... <a class="cards-publication__more" href="#">Läs&nbsp;mer.</a></p>
                         </div>
                     </div>
 
                     <div class="cards-publication__item">
                         <div class="cards-publication__media-wrapper">
-                            <img src="img/card2.jpg" alt="Card2">
+                            <img src="img/card3.jpg" alt="Card2">
                         </div>
                         <div class="cards-publication__content">
-                            <ul class="cards-publication__tags-line">
-                                <li><button class="btn" type="button" data-publication="artiklar">Artikel</button></li>
-                            </ul>
-
-                            <ul class="cards-publication__info-line">
-                                <li>4 februari 2021</li>
-                                <li>Försvarsmakten</li>
-                            </ul>
-                            
                             <h6>Framtiden är redan här</h6>
 
-                            <p>Vi har intervjuat några av Sveriges främsta forskare inom materialteknik, artificiell intelligens, mänsklig förstärkning och batteriteknik. Och ord som ”enorm potential, ”en rasande takt” och ”ett väldigt, väldigt race just nu” används om utvecklingen. Men frågan är: Hur påverkar det Försvarsmakten?... <a class="cards-publication__more" href="#">Läs&nbsp;mer.</a></p>
-                        </div>
-                    </div>
-
-                    <div class="cards-publication__item">
-                        <div class="cards-publication__media-wrapper">
-                            <img src="img/card2.jpg" alt="Card2">
-                        </div>
-                        <div class="cards-publication__content">
                             <ul class="cards-publication__tags-line">
-                                <li><button class="btn" type="button" data-publication="artiklar">Artikel</button></li>
+                                <li><button class="cards-publication__tag" type="button" data-publication="artiklar">Artikel</button></li>
                             </ul>
+
+                            <p>Vi har intervjuat några av Sveriges främsta forskare inom materialteknik, artificiell intelligens, mänsklig förstärkning och batteriteknik. Och ord som ”enorm potential, ”en rasande takt” och ”ett väldigt, väldigt race just nu” används om utvecklingen. Men frågan är: Hur påverkar det Försvarsmakten?... <a class="cards-publication__more" href="#">Läs&nbsp;mer.</a></p>
 
                             <ul class="cards-publication__info-line">
                                 <li>4 februari 2021</li>
                                 <li>Försvarsmakten</li>
                             </ul>
-                            
+                        </div>
+                    </div>
+
+                    <div class="cards-publication__item">
+                        <div class="cards-publication__media-wrapper">
+                            <img src="img/card4.jpg" alt="Card2">
+                        </div>
+                        <div class="cards-publication__content">
                             <h6>Materialteknik kan rita om global maktbalans</h6>
 
-                            <p>Jakten på ett bra kamouflage sätter materialet grafen i centrum. Men kroppsskydd i det Nobelprisade materialet kan ta decennier att göra säkra, enligt expertis. Samtidigt är oron nu stor för att vem som helst kan köpa spetsteknik och att Europa hamnar på efterkälken... <a class="cards-publication__more" href="#">Läs&nbsp;mer.</a></p>
-                        </div>
-                    </div>
-
-                    <div class="cards-publication__item">
-                        <div class="cards-publication__media-wrapper">
-                            <img src="img/card2.jpg" alt="Card2">
-                        </div>
-                        <div class="cards-publication__content">
                             <ul class="cards-publication__tags-line">
-                                <li><button class="btn" type="button" data-publication="artiklar">Artikel</button></li>
+                                <li><button class="cards-publication__tag" type="button" data-publication="artiklar">Artikel</button></li>
                             </ul>
+                            
+                            <p>Jakten på ett bra kamouflage sätter materialet grafen i centrum. Men kroppsskydd i det Nobelprisade materialet kan ta decennier att göra säkra, enligt expertis. Samtidigt är oron nu stor för att vem som helst kan köpa spetsteknik och att Europa hamnar på efterkälken... <a class="cards-publication__more" href="#">Läs&nbsp;mer.</a></p>
 
                             <ul class="cards-publication__info-line">
                                 <li>4 februari 2021</li>
                                 <li>Försvarsmakten</li>
                             </ul>
-                            
+                        </div>
+                    </div>
+
+                    <div class="cards-publication__item">
+                        <div class="cards-publication__media-wrapper">
+                            <img src="img/card5.jpg" alt="Card2">
+                        </div>
+                        <div class="cards-publication__content">
                             <h6>Totalförsvaret möjlig vinnare på 3d-printning</h6>
 
-                            <p>3d-printade hus och individanpassade läkemedel som printas på varje sjukhus. Och stor satsning på 4d-printning. Forskare beskriver nu utvecklingshastigheten inom området som ”rasande”. Frågan är vad som kommer att slå militärt?... <a class="cards-publication__more" href="#">Läs&nbsp;mer.</a></p>
-                        </div>
-                    </div>
-
-                    <div class="cards-publication__item">
-                        <div class="cards-publication__media-wrapper">
-                            <img src="img/card2.jpg" alt="Card2">
-                        </div>
-                        <div class="cards-publication__content">
                             <ul class="cards-publication__tags-line">
-                                <li><button class="btn" type="button" data-publication="artiklar">Artikel</button></li>
+                                <li><button class="cards-publication__tag" type="button" data-publication="artiklar">Artikel</button></li>
                             </ul>
+
+                            <p>3d-printade hus och individanpassade läkemedel som printas på varje sjukhus. Och stor satsning på 4d-printning. Forskare beskriver nu utvecklingshastigheten inom området som ”rasande”. Frågan är vad som kommer att slå militärt?... <a class="cards-publication__more" href="#">Läs&nbsp;mer.</a></p>
 
                             <ul class="cards-publication__info-line">
                                 <li>4 februari 2021</li>
                                 <li>Försvarsmakten</li>
                             </ul>
-                            
+                        </div>
+                    </div>
+
+                    <div class="cards-publication__item">
+                        <div class="cards-publication__media-wrapper">
+                            <img src="img/card6.jpg" alt="Card2">
+                        </div>
+                        <div class="cards-publication__content">
                             <h6>AI-expert: Oklart vad Ryssland och Kina gör</h6>
 
-                            <p>Förra Google-chefen är djupt involverad i USA:s säkerhetsarbete med artificiell intelligens, AI. Och att området kommer att påverka försvars- och säkerhetssektorn framöver är helt klart, enligt expertis... <a class="cards-publication__more" href="#">Läs&nbsp;mer.</a></p>
-                        </div>
-                    </div>
-
-                    <div class="cards-publication__item">
-                        <div class="cards-publication__media-wrapper">
-                            <img src="img/card2.jpg" alt="Card2">
-                        </div>
-                        <div class="cards-publication__content">
                             <ul class="cards-publication__tags-line">
-                                <li><button class="btn" type="button" data-publication="artiklar">Artikel</button></li>
+                                <li><button class="cards-publication__tag" type="button" data-publication="artiklar">Artikel</button></li>
                             </ul>
+
+                            <p>Förra Google-chefen är djupt involverad i USA:s säkerhetsarbete med artificiell intelligens, AI. Och att området kommer att påverka försvars- och säkerhetssektorn framöver är helt klart, enligt expertis... <a class="cards-publication__more" href="#">Läs&nbsp;mer.</a></p>
 
                             <ul class="cards-publication__info-line">
                                 <li>4 februari 2021</li>
                                 <li>Försvarsmakten</li>
                             </ul>
-                            
+                        </div>
+                    </div>
+
+                    <div class="cards-publication__item">
+                        <div class="cards-publication__media-wrapper">
+                            <img src="img/card7.jpg" alt="Card2">
+                        </div>
+                        <div class="cards-publication__content">
                             <h6>Armén i fokus när människan ska stärkas</h6>
 
-                            <p>Etiska frågor kommer att behöva lösas nu när människor och soldater kan ”förstärkas”. Antingen med tekniska yttre hjälpmedel eller med biologiska ingrepp. Men på ett eller annat sätt kommer det att ske – och utvecklingen går snabbt inom flera teknikomården... <a class="cards-publication__more" href="#">Läs&nbsp;mer.</a></p>
-                        </div>
-                    </div>
-
-                    <div class="cards-publication__item">
-                        <div class="cards-publication__media-wrapper">
-                            <img src="img/card2.jpg" alt="Card2">
-                        </div>
-                        <div class="cards-publication__content">
                             <ul class="cards-publication__tags-line">
-                                <li><button class="btn" type="button" data-publication="artiklar">Artikel</button></li>
+                                <li><button class="cards-publication__tag" type="button" data-publication="artiklar">Artikel</button></li>
                             </ul>
+
+                            <p>Etiska frågor kommer att behöva lösas nu när människor och soldater kan ”förstärkas”. Antingen med tekniska yttre hjälpmedel eller med biologiska ingrepp. Men på ett eller annat sätt kommer det att ske – och utvecklingen går snabbt inom flera teknikomården... <a class="cards-publication__more" href="#">Läs&nbsp;mer.</a></p>
 
                             <ul class="cards-publication__info-line">
                                 <li>4 februari 2021</li>
                                 <li>Försvarsmakten</li>
                             </ul>
-                            
+                        </div>
+                    </div>
+
+                    <div class="cards-publication__item">
+                        <div class="cards-publication__media-wrapper">
+                            <img src="img/card1.jpg" alt="Card2">
+                        </div>
+                        <div class="cards-publication__content">
                             <h6>Batteriprofessor: Säkrare och effektivare batterier inom kort</h6>
 
+                            <ul class="cards-publication__tags-line">
+                                <li><button class="cards-publication__tag" type="button" data-publication="artiklar">Artikel</button></li>
+                            </ul>                    
+
                             <p>Dubbel energimängd i batterier i en nära framtid kan bli verklighet och kan påverka Försvarsmakten. Men samtidigt höjs ett varningens finger för informationssäkerheten... <a class="cards-publication__more" href="#">Läs&nbsp;mer.</a></p>
+
+                            <ul class="cards-publication__info-line">
+                                <li>4 februari 2021</li>
+                                <li>Försvarsmakten</li>
+                            </ul>
                         </div>
                     </div>
 
@@ -336,19 +331,19 @@
                             <img src="img/card3.jpg" alt="Card3">
                         </div>
                         <div class="cards-publication__content">
+                            <h6>CBRN-utbildning för värnpliktiga</h6>
+
                             <ul class="cards-publication__tags-line">
-                                <li><button class="btn" type="button" data-publication="bloggar">Blogg</button></li>
+                                <li><button class="cards-publication__tag" type="button" data-publication="bloggar">Blogg</button></li>
                             </ul>
-                            
+
+                            <p>Vecka 47 gav plutonen stöd till 51. Grundutbildningskompaniet med att utbilda värnpliktiga rekryter inom både brandbekämpning samt CBRN. Samtliga värnpliktiga rekryter oavsett... <a class="cards-publication__more" href="#">Läs&nbsp;mer.</a></p>
+
                             <ul class="cards-publication__info-line">
                                 <li> 30 november 2020 </li>
                                 <li>10.00-11.00</li>
                                 <li>Försvarsmakten</li>
                             </ul>
-                            
-                            <h6>CBRN-utbildning för värnpliktiga</h6>
-
-                            <p>Vecka 47 gav plutonen stöd till 51. Grundutbildningskompaniet med att utbilda värnpliktiga rekryter inom både brandbekämpning samt CBRN. Samtliga värnpliktiga rekryter oavsett... <a class="cards-publication__more" href="#">Läs&nbsp;mer.</a></p>
                         </div>
                     </div>
 
@@ -358,19 +353,19 @@
                             <img src="img/card4.jpg" alt="Card4">
                         </div>
                         <div class="cards-publication__content">
+                            <h6>Försvarsindustrins roll i säkerhetspolitiken</h6>
+
                             <ul class="cards-publication__tags-line">
-                                <li><button class="btn" type="button" data-publication="webinarier">Webinarie</button></li>
+                                <li><button class="cards-publication__tag" type="button" data-publication="webinarier">Webinarie</button></li>
                             </ul>
+                            
+                            <p>Tidningen Aktuell Hållbarkhet har återigen med Försvarsmaktens hållbarhetschef Nanzoush Habashian på listan över Sveriges mäktigaste inom området. <a class="cards-publication__more" href="#">Läs&nbsp;mer.</a></p>
 
                             <ul class="cards-publication__info-line">
                                 <li> 29 november 2020 </li>
                                 <li>10.00-11.00</li>
                                 <li>Digitalt</li>
                             </ul>
-                            
-                            <h6>Försvarsindustrins roll i säkerhetspolitiken</h6>
-
-                            <p>Tidningen Aktuell Hållbarkhet har återigen med Försvarsmaktens hållbarhetschef Nanzoush Habashian på listan över Sveriges mäktigaste inom området. <a class="cards-publication__more" href="#">Läs&nbsp;mer.</a></p>
                         </div>
                     </div>
 
@@ -379,18 +374,18 @@
                             <img src="img/card5.jpg" alt="Card5">
                         </div>
                         <div class="cards-publication__content">
+                            <h6>Försvarssektorn enig om miljöinriktning</h6>
+
                             <ul class="cards-publication__tags-line">
-                                <li><button class="btn" type="button" data-publication="artiklar">Artikel</button></li>
+                                <li><button class="cards-publication__tag" type="button" data-publication="artiklar">Artikel</button></li>
                             </ul>
+
+                            <p>Nu har försvarssektorn enats om en gemensam inriktning för tre gemensamma fokusområden; energi och klimat, kemi och förorenade områden. Syftet med samverkan kring en gemensam inriktning är att... <a class="cards-publication__more" href="#">Läs&nbsp;mer.</a></p>
 
                             <ul class="cards-publication__info-line">
                                 <li> 10 november 2020 </li>
                                 <li>Försvarsmakten</li>
                             </ul>
-                            
-                            <h6>Försvarssektorn enig om miljöinriktning</h6>
-
-                            <p>Nu har försvarssektorn enats om en gemensam inriktning för tre gemensamma fokusområden; energi och klimat, kemi och förorenade områden. Syftet med samverkan kring en gemensam inriktning är att... <a class="cards-publication__more" href="#">Läs&nbsp;mer.</a></p>
 
                         </div>
                     </div>
@@ -401,19 +396,19 @@
                             <img src="img/card6.jpg" alt="Card6">
                         </div>
                         <div class="cards-publication__content">
+                            <h6>Folk och Försvars Rikskonferens</h6>
+
                             <ul class="cards-publication__tags-line">
-                                <li><button class="btn" type="button" data-publication="webinarier">Webinarie</button></li>
+                                <li><button class="cards-publication__tag" type="button" data-publication="webinarier">Webinarie</button></li>
                             </ul>
+                            
+                            <p>Folk och Försvars Rikskonferens är ett tillfälle att främja diskussion om försvars- och säkerhets- politik med högnivåtalare och framstående experter som deltagare. <a class="cards-publication__more" href="#">Läs&nbsp;mer.</a></p>
 
                             <ul class="cards-publication__info-line">
                                 <li> 9 november 2020 </li>
                                 <li>09.00-17.00</li>
                                 <li>Digitalt</li>
                             </ul> 
-                            
-                            <h6>Folk och Försvars Rikskonferens</h6>
-
-                            <p>Folk och Försvars Rikskonferens är ett tillfälle att främja diskussion om försvars- och säkerhets- politik med högnivåtalare och framstående experter som deltagare. <a class="cards-publication__more" href="#">Läs&nbsp;mer.</a></p>
                         </div>
                     </div>
 
@@ -423,19 +418,19 @@
                             <img src="img/card7.jpg" alt="Card7">
                         </div>
                         <div class="cards-publication__content">
+                            <h6>I rikets hemliga tjänst</h6>
+
                             <ul class="cards-publication__tags-line">
-                                <li><button class="btn" type="button" data-publication="Uppsatser">Utställning</button></li>
-                            </ul>
+                                <li><button class="cards-publication__tag" type="button" data-publication="Uppsatser">Utställning</button></li>
+                            </ul>                            
+
+                            <p>Möt kvinnorna i svensk underrättelsetjänst under andra världskriget. I hemlighet tjänstgör de som informanter, kurirer eller infiltratörer. <a class="cards-publication__more" href="#">Läs&nbsp;mer.</a></p>
 
                             <ul class="cards-publication__info-line">
                                 <li> 9 november 2020 </li>
                                 <li>10.00-16.00</li>
                                 <li>Stockholm</li>
                             </ul> 
-                            
-                            <h6>I rikets hemliga tjänst</h6>
-
-                            <p>Möt kvinnorna i svensk underrättelsetjänst under andra världskriget. I hemlighet tjänstgör de som informanter, kurirer eller infiltratörer. <a class="cards-publication__more" href="#">Läs&nbsp;mer.</a></p>
 
                         </div>
                     </div>

@@ -1,5 +1,5 @@
 
-//Nackground on scroll
+//Background on scroll
 const myNav = document.getElementById('navMain');
 
 window.onscroll = function () { 

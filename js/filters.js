@@ -1,31 +1,80 @@
-let tags = [];
-let years = [];
-let publications = [];
+let dropdownBtnCategory = document.querySelectorAll('#filterCategory .dropdown-container input');
+let dropdownBtnPublication = document.querySelectorAll('#filterPublication .dropdown-container input');
+let dropdownBtnCentury = document.querySelectorAll('#filterCentury .dropdown-container input');
+const filterSection = document.getElementById('filterSection');
 
-const tagsParent = document.getElementById('filterCategory');
-const yearsParent = document.getElementById('filterDate');
-const publParent = document.getElementById('filterPublication');
+let filterSelectedTags = document.querySelector('#filterSelectedTags .filter-selectedtags__list');
 
-if(tagsParent) {
-    let tagsBtns = tagsParent.querySelectorAll('.btn-filter');
+function checkListener(arr) {
+    if(arr) {
+        checkInit(arr);
+        arr.forEach((el) => {
+            el.addEventListener('input', (evt) => {
+                if(evt.target.getAttribute('type') !== 'radio') {
+                    if(evt.target.checked) {
+                        addTag(evt.target.value, filterSelectedTags);
+                    } else {
+                        removeTagg(evt.target.value, filterSelectedTags);
+                    }
+                } else {
+                    evt.target.closest('.dropdown').querySelector('.dropbtn').textContent = evt.target.value;
+                }
+            });
+        });
+    }
+};
 
-    for (btn of tagsBtns) {
-        tags.push(btn.dataset.tag);
+function checkInit(arr) {
+    arr.forEach((el) => {
+        if(el.getAttribute('type') !== 'radio') {
+            if(el.checked) {
+                addTag(el.value, filterSelectedTags);
+            } else {
+                removeTagg(el.value, filterSelectedTags);
+            }
+        } else {
+            if(el.checked) {
+                el.closest('.dropdown').querySelector('.dropbtn').textContent = el.value;
+            }
+        }
+    });
+};
+
+function addTag(tag, tagList) {
+    tagList.insertAdjacentHTML('beforeend', `
+        <li><button class="filter-selectedtags__btn" type="button" data-name="${tag}">${tag}</button></li>
+    `);
+    tagListener(tagList);
+};
+
+function removeTagg(tag, tagList) {
+    if(tagList.querySelector(`.filter-selectedtags__btn[data-name="${tag}"]`)) {
+        tagList.querySelector(`.filter-selectedtags__btn[data-name="${tag}"]`).closest('LI').remove();
     }
 }
 
-if(yearsParent) {
-    let yearsBtns = yearsParent.querySelectorAll('.btn-filter');
+function tagListener(tagList) {
+    tagList.querySelectorAll('.filter-selectedtags__btn').forEach((el) => {
+        
+        el.addEventListener('click', (evt) => {
+            let tag = evt.target.getAttribute('data-name');
+            evt.target.closest('LI').remove();
 
-    for (btn of yearsBtns) {
-        years.push(btn.dataset.year);
-    }
-}
+            removeCheckedBtn(tag);
+        });
+    });
+};
 
-if(publParent) {
-    let publBtns = publParent.querySelectorAll('.btn-filter');
+function removeCheckedBtn(tag) {
+    filterSection.querySelectorAll('.dropdown-container input').forEach(el => {
+        if(el.value === tag) {
+            el.checked = false;
+        }
+    });
+};
 
-    for (btn of publBtns) {
-        publications.push(btn.dataset.publication);
-    }
-}
+checkListener(dropdownBtnCentury);
+checkListener(dropdownBtnCategory);
+checkListener(dropdownBtnPublication);
+
+tagListener(filterSelectedTags);

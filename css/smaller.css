@@ -123,17 +123,8 @@ footer {
 .half-section .half-section__content .btn {
   margin-bottom: 15px; }
 
-.cards-publication__item h6 {
-  font-size: 24px; }
-
-.cards-publication__info-line li {
-  font-size: 16px; }
-
 .cards-publication__tags-line button {
   font-size: 17px; }
-
-.cards-publication__media-wrapper {
-  height: 310px; }
 
 .cards-publication__item_ivent .cards-publication__media-wrapper span {
   font-size: 15px;
@@ -212,10 +203,8 @@ footer {
   header h1 {
     max-width: 510px; }
 
-  .cards-publication__item h6 {
-    font-size: 20px; }
   .cards-publication__item p {
-    line-height: 140%; } }
+    line-height: 150%; } }
 @media screen and (max-width: 424px) {
   .independence .btn {
     height: 52px; }

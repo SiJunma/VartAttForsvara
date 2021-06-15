@@ -19,16 +19,13 @@
 
   .cards-publication__tags-line {
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
+        flex-wrap: wrap;
+    margin-top: 14px; }
 
-  .cards-publication__item {
-    padding: 1em; }
-
-  .cards-publication__item_ivent {
-    padding-top: 120px; }
+  .cards-publication__item h6 {
+    font-size: 26px; }
 
   .cards-publication__media-wrapper {
-    margin-right: 30px;
     width: 36%; }
 
   .main-quote {
@@ -73,13 +70,6 @@
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start; }
-
-  .cards-publication__item_ivent {
-    padding-top: 90px; }
-
-  .cards-publication__item_ivent::before {
-    height: 60px;
-    font-size: 24px; }
 
   .pagination .pagination__wrapper {
     max-width: 900px; } }
@@ -189,6 +179,12 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column; }
+    .cards-publication__item_ivent .cards-publication__media-wrapper span {
+      z-index: 1;
+      left: 0;
+      right: unset;
+      bottom: 0;
+      top: unset; }
 
   .cards-publication__media-wrapper {
     margin-right: 0px;
@@ -203,20 +199,14 @@
         -ms-flex-align: center;
             align-items: center;
     margin: 0 auto;
-    margin-bottom: 35px;
     max-width: none;
-    height: 340px; }
+    height: 300px; }
 
   .pagination {
     margin-bottom: 170px;
     margin-top: 20px; }
     .pagination .pagination__wrapper {
       max-width: 700px; }
-
-  .filter-publication button,
-  .category-list button {
-    height: 50px;
-    padding: 0 20px; }
 
   .category-list li {
     margin: 20px 10px 0 10px; }
@@ -238,14 +228,10 @@
     margin: 120px auto; }
 
   .cards-publication__item h6 {
-    font-size: 22px; }
+    font-size: 24px; }
 
   .cards-publication__item p {
-    font-size: 20px; }
-
-  .cards-publication__tags-line button {
-    height: 46px;
-    font-size: 21px; }
+    font-size: 18px; }
 
   .independence h4 {
     max-width: unset; } }
@@ -255,6 +241,15 @@
 @media screen and (max-width: 768px) {
   h1 {
     font-size: 50px; }
+
+  .cards-publication__content {
+    padding: 30px; }
+
+  .cards-publication__media-wrapper {
+    height: 250px; }
+
+  .cards-publication__item p {
+    font-size: 17px; }
 
   h2 {
     font-size: 45px; }
@@ -328,34 +323,8 @@
       width: 45px;
       height: 45px; }
 
-  .cards-publication__info-line li {
-    font-size: 17px; }
-
-  .cards-publication__info-line {
-    margin-bottom: 21px;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
-
-  .cards-publication__item {
-    padding: 0.3em; }
-
-  .cards-publication__item_ivent {
-    padding-top: 70px;
-    padding-bottom: 20px; }
-
-  .cards-publication__item p {
-    font-size: 20px; }
-
   .cards-publication__item h6 {
     font-size: 20px; }
-
-  .cards-publication__tags-line button {
-    background: #C4C4C4;
-    color: #000000;
-    height: 46px;
-    font-size: 19px;
-    padding: 0 26px;
-    width: auto; }
 
   .half-section .half-section__content {
     padding: 35px 20px; }
@@ -369,7 +338,38 @@
     font-size: 18px; }
 
   .filter .filter__spoiler h5 {
-    font-size: 28px; } }
+    font-size: 28px; }
+
+  .filter-publication__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+
+  .filter-publication__item:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 20px; }
+
+  .cards-publication__tags-line {
+    margin-top: 10px; }
+    .cards-publication__tags-line li {
+      margin-bottom: 10px; }
+
+  .cards-publication__info-line {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: 10px; }
+    .cards-publication__info-line li:first-child {
+      -ms-flex-preferred-size: 100%;
+          flex-basis: 100%; }
+      .cards-publication__info-line li:first-child::after {
+        display: none; } }
 @media screen and (max-width: 424px) {
   h1 {
     font-size: 34px; }
@@ -425,6 +425,9 @@
     font-size: 22px; }
 
   .filter .filter__spoiler svg {
-    margin-right: 10px; } }
+    margin-right: 10px; }
+
+  .cards-publication__content {
+    padding: 30px 20px; } }
 
 /*# sourceMappingURL=media.css.map */

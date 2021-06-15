@@ -513,7 +513,9 @@ footer {
   .filter-publication__wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
   .filter-publication__item {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -537,11 +539,11 @@ footer {
   border-radius: 24px;
   color: #3A3E40;
   font-weight: 400;
-  font-size: 19px;
+  font-size: 16px;
   border: none;
   padding: 15px 22px;
-  width: 250px;
-  height: 49px;
+  width: 220px;
+  height: 42px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -580,7 +582,7 @@ footer {
   background: #EAE9ED;
   border-radius: 24px 3px 24px 24px;
   border: 1px solid #C1BBD0;
-  width: 250px;
+  width: 220px;
   z-index: 1;
   margin-top: 5px;
   padding: 22px;
@@ -625,7 +627,7 @@ footer {
   position: relative;
   padding-left: 35px;
   cursor: pointer;
-  font-size: 22px;
+  font-size: 16px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -645,7 +647,7 @@ footer {
 .checkmark,
 .radiomark {
   position: absolute;
-  top: 4px;
+  top: 0;
   left: 0;
   width: 22px;
   height: 22px;
@@ -700,13 +702,15 @@ footer {
     display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center; }
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
     .filter-selectedtags__list li {
       margin: 7px; }
   .filter-selectedtags__btn {
     background: #E0E0E0;
     border-radius: 24px;
-    height: 49px;
+    height: 42px;
     border: none;
     padding: 0 20px;
     display: -webkit-box;
@@ -716,7 +720,7 @@ footer {
         -ms-flex-align: center;
             align-items: center;
     font-family: Favorit;
-    font-size: 19px; }
+    font-size: 16px; }
     .filter-selectedtags__btn::before {
       content: '';
       display: block;
@@ -730,7 +734,9 @@ footer {
 
 .cards-publication__list {
   padding-top: 45px;
-  padding-bottom: 45px; }
+  padding-bottom: 45px;
+  max-width: 1080px;
+  margin: 0 auto; }
 .cards-publication__item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -738,16 +744,21 @@ footer {
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
-  padding: 2em;
-  border: 1px solid #A5A5A5; }
+  padding: 0;
+  border: 1px solid #B9B9B9;
+  border-radius: 24px;
+  background: #FBFBFB;
+  overflow: hidden; }
   .cards-publication__item:not(:last-child) {
     margin-bottom: 25px; }
   .cards-publication__item h6 {
     font-family: 'EB Garamond';
-    font-size: 30px;
+    font-size: 28px;
     font-weight: bold;
     color: #000000;
-    text-align: left; }
+    text-align: center;
+    line-height: 120%;
+    margin-bottom: 0; }
 .cards-publication__more {
   color: #000000;
   font-weight: bold; }
@@ -758,21 +769,26 @@ footer {
   display: flex;
   padding: 0;
   margin: 0;
-  margin-bottom: 15px; }
+  margin-top: 15px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
   .cards-publication__tags-line li {
     margin-bottom: 14px; }
   .cards-publication__tags-line li:not(:last-child) {
     margin-right: 14px; }
-  .cards-publication__tags-line button {
-    background: #5C5E5F;
-    color: #FFFFFF;
-    height: 42px;
-    padding: 0 30px;
-    width: auto;
-    font-size: 20px; }
-    .cards-publication__tags-line button:hover {
-      background: #AFAFAF;
-      color: #000000; }
+.cards-publication__tag {
+  background: transparent;
+  color: #738FD3;
+  font-weight: 500;
+  font-family: Favorit;
+  text-decoration: none;
+  padding: 0;
+  width: auto;
+  font-size: 20px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  border: none; }
 .cards-publication__info-line {
   list-style: none;
   display: -webkit-box;
@@ -780,39 +796,68 @@ footer {
   display: flex;
   padding: 0;
   margin: 0;
-  margin-bottom: 15px; }
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #717475;
+  margin-top: 20px; }
   .cards-publication__info-line li {
     font-family: Favorit;
-    font-weight: 400;
-    font-size: 18px; }
+    font-weight: 300;
+    font-size: 16px; }
     .cards-publication__info-line li:not(:last-child)::after {
       content: '|';
       margin: 0 0.6em; }
+.cards-publication__content {
+  padding: 40px;
+  padding-bottom: 38px;
+  font-family: Favorit;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .cards-publication__content p {
+    margin-bottom: 0;
+    text-align: left;
+    font-weight: 300;
+    font-size: 18px;
+    color: #000000; }
 .cards-publication__media-wrapper {
-  max-width: 460px;
+  max-width: 400px;
   width: 40%;
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  height: auto;
-  margin-right: 50px; }
+  position: relative; }
   .cards-publication__media-wrapper img {
     -o-object-fit: cover;
        object-fit: cover;
     width: 100%;
-    height: 100%; }
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0; }
 .cards-publication__item_ivent {
-  position: relative;
-  padding-top: 105px; }
+  position: relative; }
   .cards-publication__item_ivent::before {
     content: 'EVENT';
     position: absolute;
-    left: 0;
     top: 0;
-    font-weight: bold;
-    color: #000000;
-    background-color: #AEB9D3;
-    width: 100%;
-    height: 60px;
+    right: 0;
+    font-weight: 400;
+    border-bottom-left-radius: 14px;
+    font-size: 14px;
+    padding: 0 20px;
+    font-family: 'Favorit';
+    color: #ffffff;
+    background: #9FAFD7;
+    height: 38px;
     text-align: center;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -822,7 +867,8 @@ footer {
             justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center; }
+            align-items: center;
+    z-index: 1; }
   .cards-publication__item_ivent .cards-publication__media-wrapper {
     position: relative; }
     .cards-publication__item_ivent .cards-publication__media-wrapper span {

@@ -62,22 +62,16 @@
             </div>
         </section>
 
-        <section id="filterDate" class="filter-date">
-            <div class="container">
-                
-            </div>
-        </section>
-
-        <section id="filterPublication" class="filter-publication">
+        <section id="filterSection" class="filter-publication">
             <div class="container">
                 <div class="filter-publication__wrapper">
-                    <div class="filter-publication__item">
+                    <div class="filter-publication__item" id="filterCategory">
                         <span>Välj kategorier</span>
                         <div class="dropdown">
                             <button class="dropbtn">Choose a category</button>
                             <div class="dropdown-content">
-                                <label class="dropdown-container">Alla
-                                    <input type="checkbox" checked value="Alla">
+                                <label class="dropdown-container">Alla kategorier
+                                    <input type="checkbox" checked value="Alla kategorier">
                                     <span class="checkmark"></span>
                                 </label>
                                 <label class="dropdown-container">Diplomati
@@ -100,34 +94,34 @@
                         </div>
                     </div>
     
-                    <div class="filter-publication__item">
+                    <div class="filter-publication__item" id="filterCentury">
                         <span>Filter by century</span>
                         <div class="dropdown">
                             <button class="dropbtn">1500 - 1599 years</button>
                             <div class="dropdown-content">
                                 <label class="dropdown-container">1500 - 1599
-                                    <input type="radio" name="years" checked>
+                                    <input type="radio" name="years" value="1500 - 1599" checked>
                                     <span class="radiomark"></span>
                                 </label>
                                 <label class="dropdown-container">1600 - 1699
-                                    <input type="radio" name="years">
+                                    <input type="radio" name="years" value="1600 - 1699">
                                     <span class="radiomark"></span>
                                 </label>
                                 <label class="dropdown-container">1700 - 1799
-                                    <input type="radio" name="years">
+                                    <input type="radio" name="years" value="1700 - 1799">
                                     <span class="radiomark"></span>
                                 </label>
                                 <label class="dropdown-container">1800 - 1899
-                                    <input type="radio" name="years">
+                                    <input type="radio" name="years" value="1800 - 1899">
                                     <span class="radiomark"></span>
                                 </label>
                                 <label class="dropdown-container">1900 - 1999
-                                    <input type="radio" name="years">
+                                    <input type="radio" name="years" value="1900 - 1999">
                                     <span class="radiomark"></span>
                                 </label>
     
                                 <label class="dropdown-container">2000 >
-                                    <input type="radio" name="years">
+                                    <input type="radio" name="years" value="2000 >">
                                     <span class="radiomark"></span>
                                 </label>
                             </div>
@@ -140,13 +134,7 @@
         <section id="filterSelectedTags" class="filter-selectedtags">
             <div class="container">
                 <ul class="filter-selectedtags__list">
-                    <li>
-                        <button class="filter-selectedtags__btn" type="button" data-name="Industri">Industri</button>
-                    </li>
 
-                    <li>
-                        <button class="filter-selectedtags__btn" type="button" data-name="Handel">Handel</button>
-                    </li>
                 </ul>
             </div>
         </section>
