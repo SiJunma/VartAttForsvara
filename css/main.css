@@ -1154,4 +1154,9 @@ footer {
         -ms-flex-pack: justify;
             justify-content: space-between; }
 
+.filter-media-thin .filter-publication__wrapper,
+.filter-media-thin .filter-selectedtags__list {
+  max-width: 1080px;
+  margin: 0 auto; }
+
 /*# sourceMappingURL=main.css.map */

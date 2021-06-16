@@ -1276,3 +1276,11 @@ footer {
         justify-content: space-between;
     }
 }
+
+.filter-media-thin {
+    .filter-publication__wrapper,
+    .filter-selectedtags__list {
+        max-width: 1080px;
+        margin: 0 auto;
+    }
+}
