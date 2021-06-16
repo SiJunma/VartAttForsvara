@@ -205,6 +205,10 @@ header {
     background-image: url('../img/header-bg4.jpg');
 }
 
+.header_contact {
+    background-image: url('../img/header-bg5.jpg');
+}
+
 .nav-main {
     color: #fff;
     font-family: 'Favorit', sans-serif;
@@ -409,6 +413,10 @@ header {
         &.h-line {
             margin-bottom: 0;
         }
+    }
+
+    &.margin-bottom {
+        margin-bottom: 150px;
     }
 
     .btn {
@@ -1282,5 +1290,124 @@ footer {
     .filter-selectedtags__list {
         max-width: 1080px;
         margin: 0 auto;
+    }
+}
+
+.contact-section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+
+    &__form-wrapper {
+        display: flex;
+        flex-direction: column;
+        max-width: 450px;
+
+        h2 {
+            text-align: left;
+            color: #000000;
+            font-weight: 500;
+        }
+    }
+
+    &__info-wrapper {
+        background: #F3F3F3;
+        padding: 40px 48px;
+        margin-left: 5em;
+        padding-right: 70px;
+    }
+
+    &__info-list {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        font-family: favorit;
+        margin-top: 45px;
+        font-size: 18px;
+
+        p {
+            margin-bottom: 0;
+
+            &:not(:last-of-type) {
+                margin-bottom: 7px;
+            }
+        }
+
+        li {
+            padding-left: 25px;
+            position: relative;
+
+            &:not(:last-child) {
+                margin-bottom: 40px;
+            }
+
+            &::before {
+                content: '';
+                width: 12px;
+                height: 12px;
+                border-radius: 50%;
+                background: #9FAFD7;
+                margin-right: 15px;
+                margin-top: 6px;
+                position: absolute;
+                left: 0;
+            }
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+        max-width: 1024px;
+        margin: 0 auto;
+
+        h3 {
+            text-align: left;
+            font-family: favorit;
+            color: #000000;
+        }
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+
+        input,
+        textarea {
+            border: 2px solid #A0A0A0;
+            font-family: favorit;
+            box-sizing: border-box;
+            border-radius: 24px;
+            padding: 9px 22px;
+            font-weight: 300;
+            font-size: 19px;
+            color: #3A3E40;
+            outline: none;
+            margin: 7px 0;
+            width: 100%;
+
+            &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+                color: #A0A0A0;
+                opacity: 1; /* Firefox */
+                font-size: 17px;
+                font-weight: 300;
+              }
+              
+              &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+                color: #A0A0A0;
+                font-size: 17px;
+                font-weight: 300;
+              }
+              
+              &::-ms-input-placeholder { /* Microsoft Edge */
+                color: #A0A0A0;
+                font-size: 17px;
+                font-weight: 300;
+              }
+        }
+
+        button {
+            margin: 8px 0;
+            font-family: favorit;
+            font-weight: 500;
+        }
     }
 }
